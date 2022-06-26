@@ -1,4 +1,4 @@
-import { IPerson, TProduct, TProductList } from '../types';
+import { IPerson, TProduct } from '../types';
 
 class Customer implements IPerson {
   private products: TProduct[] | undefined;
@@ -15,6 +15,8 @@ class Customer implements IPerson {
 
   public takeProducts(products: TProduct[]) {
     this.products = products;
+    console.log('Customer products', this.products);
+    console.log('Customer balance', Number(this.balance.toFixed(2)));
   }
 }
 

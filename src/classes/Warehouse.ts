@@ -9,10 +9,11 @@ class Warehouse {
     manager: WarehouseManager,
     productList: TProductList
   ) {
-    Object.entries(productList).forEach(([key, value]) => {
-      this.products[value.producer].amount -= value.amount;
+    Object.values(productList).forEach((product) => {
+      this.products[product.producer].amount -= product.amount;
     });
     manager.getProductsFromWarehouse(productList);
+    console.log('Warehouse products', this.products);
   }
 }
 

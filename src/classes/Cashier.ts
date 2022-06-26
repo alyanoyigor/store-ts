@@ -36,6 +36,7 @@ class Cashier implements IPerson {
 
     this.takeMoneyFromCustomer(customer, totalSum);
     this.giveCustomerProducts(customer, customerProducts);
+    console.log('Cashier balance', Number(this.balance.toFixed(2)));
   }
 
   protected takeMoneyFromCustomer(customer: Customer, amount: number) {

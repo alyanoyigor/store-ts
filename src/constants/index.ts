@@ -1,31 +1,31 @@
-import { Producer, TProductList } from '../types';
+import { Producer, TProduct, TProductList } from '../types';
 
 export const products: TProductList = {
   [Producer.CocaCola]: {
     name: 'Coca Cola',
     price: 29.99,
     producer: Producer.CocaCola,
-    amount: 1000,
+    amount: 50,
   },
   [Producer.Danone]: {
     name: 'Danone blueberry yogurt drinking 1.5%',
     weight: '800g',
     price: 53.99,
     producer: Producer.Danone,
-    amount: 500,
+    amount: 50,
   },
   [Producer.AVK]: {
     name: 'AVK "Trufalie" candies',
     price: 74.49,
     producer: Producer.AVK,
-    amount: 5000,
+    amount: 50,
   },
   [Producer.Millennium]: {
     name: 'Millennium Favorite milk chocolate',
     weight: '100g',
     price: 29.99,
     producer: Producer.Millennium,
-    amount: 6000,
+    amount: 50,
   },
 };
 
@@ -34,26 +34,36 @@ export const desirableProducts: TProductList = {
     name: 'Coca Cola',
     price: 29.99,
     producer: Producer.CocaCola,
-    amount: 900,
+    amount: 10,
   },
   [Producer.Danone]: {
     name: 'Danone blueberry yogurt drinking 1.5%',
     weight: '800g',
     price: 53.99,
     producer: Producer.Danone,
-    amount: 100,
+    amount: 10,
   },
   [Producer.AVK]: {
     name: 'AVK "Trufalie" candies',
     price: 74.49,
     producer: Producer.AVK,
-    amount: 4500,
+    amount: 10,
   },
   [Producer.Millennium]: {
     name: 'Millennium Favorite milk chocolate',
     weight: '100g',
     price: 29.99,
     producer: Producer.Millennium,
-    amount: 5500,
+    amount: 10,
   },
 };
+
+export const customerProducts: TProduct[] = [
+  {
+    name: 'Millennium Favorite milk chocolate',
+    weight: '100g',
+    price: 29.99,
+    producer: Producer.Millennium,
+    amount: 1,
+  },
+];
