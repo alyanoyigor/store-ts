@@ -8,7 +8,7 @@ export enum Producer {
   Millennium = 'Millennium',
   AVK = 'AVK',
 }
-let nameOfA = Producer[Producer.CocaCola as keyof typeof Producer];
+
 export type TProduct = {
   name: string;
   price: number;
